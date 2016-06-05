@@ -91,13 +91,13 @@ def draw(canvas):
 
     # update paddle's vertical position, keep paddle on the screen:
     # left paddle:
-    if (paddle1_pos[0][1] + paddle1_vel >= 0) and
+    if (paddle1_pos[0][1] + paddle1_vel >= 0) and \
     (paddle1_pos[3][1] + paddle1_vel <= HEIGHT):
         for coordinate in paddle1_pos:
             coordinate[1] += paddle1_vel
 
     # right paddle:
-    if (paddle2_pos[0][1] + paddle2_vel >= 0) and
+    if (paddle2_pos[0][1] + paddle2_vel >= 0) and \
     (paddle2_pos[3][1] + paddle2_vel <= HEIGHT):
         for coordinate in paddle2_pos:
             coordinate[1] += paddle2_vel
@@ -116,7 +116,7 @@ def draw(canvas):
     # horizontal bounce:
     # right side:
     if ball_pos[0] + (BALL_RADIUS + 1) >= WIDTH - PAD_WIDTH - 1:
-        if paddle2_pos[0][1] - (BALL_RADIUS+1) <=
+        if paddle2_pos[0][1] - (BALL_RADIUS+1) <= \
         ball_pos[1] <= paddle2_pos[3][1] + (BALL_RADIUS+1):
             bounce()
         else:
@@ -125,7 +125,7 @@ def draw(canvas):
             spawn_ball()
     # left side:
     if ball_pos[0] - (BALL_RADIUS + 1) <= PAD_WIDTH:
-        if paddle1_pos[0][1] - (BALL_RADIUS + 1) <= ball_pos[1] <=
+        if paddle1_pos[0][1] - (BALL_RADIUS + 1) <= ball_pos[1] <= \
         paddle1_pos[3][1] + (BALL_RADIUS+1):
             bounce()
         else:
@@ -188,6 +188,7 @@ def button_handler():
 ################
 # create frame #
 ################
+
 frame = simplegui.create_frame("Pong", WIDTH, HEIGHT)
 frame.set_draw_handler(draw)
 frame.set_keydown_handler(keydown)
@@ -197,5 +198,6 @@ frame.add_button("new game", button_handler,  100)
 ###############
 # start frame #
 ###############
+
 new_game()
 frame.start()
