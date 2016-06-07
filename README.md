@@ -1,8 +1,8 @@
-# Classic Pong for Python
+## Python Games
 ###### [Play Pong here](http://www.codeskulptor.org/#user41_IEECkGySF5_0.py) | [Play Blackjack here](http://www.codeskulptor.org/#user41_G8fEB3jjfc_0.py)
 
 A few simple games for Python:
-- A recreation of the classic game, Pong.
+- A recreation of the classic arcade game, Pong.
 - Blackjack (player vs dealer).
 
 It uses the graphical libraries, SimpleGui, SimpleMap, and SimplePlot -- which are based on [PyGame](http://www.pygame.org/hifi.html) library. However, it is easier (and recommended) that you develop/play using CodeSkulptor (which already has these libraries setup).
