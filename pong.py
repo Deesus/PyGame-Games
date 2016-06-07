@@ -195,9 +195,9 @@ frame.set_keydown_handler(keydown)
 frame.set_keyup_handler(keyup)
 frame.add_button("new game", button_handler,  100)
 
-###############
-# start frame #
-###############
+################
+#  start game  #
+################ 
 
 new_game()
 frame.start()
