@@ -8,7 +8,6 @@ import random
     and 'w'/'s' for left paddle.
 """
 
-__author__ = ('Dee Reddy', 'deesus@yandex.com')
 
 #############################################
 

@@ -10,7 +10,6 @@ import simplegui
     images to something else.
 """
 
-__author__ = ('Dee Reddy', 'deesus@yandex.com')
 
 #############################################
 
